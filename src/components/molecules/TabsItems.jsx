@@ -4,24 +4,23 @@ import { useTabs } from "../../utils/context/TabActive";
 import { useState, useEffect } from "react";
 import Card from "../atoms/Card";
 
-export default function TabsItems({ label, children }) {
+export default function TabsItems() {
   const { isActive } = useTabs();
   const [filteredData, setFilteredData] = useState({
     available: [],
     allProduct: [],
   });
-  const tabs = ["All Products", "Available Now"];
 
   useEffect(() => {
     fetchData();
   }, []);
+
   const fetchData = async () => {
     try {
       const res = await fetch(
         "https://raw.githubusercontent.com/devchallenges-io/web-project-ideas/main/front-end-projects/data/simple-coffee-listing-data.json"
       );
       const data = await res.json();
-      // console.log(data);
       setFilteredData({
         available: data.filter((item) => item.available === true),
         allProduct: data,
