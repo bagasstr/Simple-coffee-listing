@@ -7,9 +7,9 @@ export default function CollectionPage() {
     <>
       <div className=''>
         <div className=''>
-          <img src='/src/assets/bg-cafe.jpg' alt='' />
+          <img src='/bg-cafe.jpg' alt='' />
           <div className='container'>
-            <img src='/src/assets/vector.svg' alt='' className='img-vector' />
+            <img src='/vector.svg' alt='' className='img-vector' />
             <div className='relative'>
               <h1 className=''>Our Collection</h1>
               <p className=''>

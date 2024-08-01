@@ -34,7 +34,7 @@ export default function Card({
             <div className='flex items-center'>
               {rating ? (
                 <>
-                  <img src='/src/assets/Star_fill.svg' alt='' />
+                  <img src='/Star_fill.svg' alt='' />
                   <h4 className='text-text font-medium text-sm ml-2'>
                     {rating}
                   </h4>
@@ -44,7 +44,7 @@ export default function Card({
                 </>
               ) : (
                 <>
-                  <img src='/src/assets/Star.svg' alt='' />
+                  <img src='/Star.svg' alt='' />
                   <h4 className='text-gray font-medium text-sm ml-2'>
                     No ratings
                   </h4>
