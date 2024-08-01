@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  @screen sm {
+    .container {
+      @apply absolute bg-primary right-0 left-0 top-44 mx-auto w-5/6 rounded-lg py-14;
+    }
+    h1 {
+      @apply text-text text-center font-semibold text-[32px];
+    }
+    .img-vector {
+      @apply absolute right-20 top-5;
+    }
+    p {
+      @apply w-2/5 text-center mx-auto text-gray text-[16px];
+    }
+    button {
+      @apply px-3 py-2 text-[14px] font-semibold text-text rounded-md;
+    }
+    .container-tabs {
+      @apply flex justify-center mt-8;
+    }
+    button.active-tab {
+      @apply bg-gray;
+    }
+    .card {
+      @apply grid grid-cols-1 gap-x-8 gap-y-12;
+    }
+  }
+  @screen md {
+    .container {
+      @apply absolute bg-primary right-0 left-0 top-44 mx-auto w-5/6 rounded-lg py-14;
+    }
+    h1 {
+      @apply text-text text-center font-semibold text-[32px];
+    }
+    .img-vector {
+      @apply absolute right-64 top-5;
+    }
+    p {
+      @apply w-2/5 text-center mx-auto text-gray text-[16px];
+    }
+    button {
+      @apply px-3 py-2 text-[14px] font-semibold text-text rounded-md;
+    }
+    .container-tabs {
+      @apply flex justify-center mt-8;
+    }
+    button.active-tab {
+      @apply bg-gray;
+    }
+    .card {
+      @apply grid grid-cols-2 gap-x-8 gap-y-12;
+    }
+  }
+  @screen lg {
+    .container {
+      @apply absolute bg-primary right-0 left-0 top-44 mx-auto w-5/6 rounded-lg py-14;
+    }
+    h1 {
+      @apply text-text text-center font-semibold text-[32px];
+    }
+    .img-vector {
+      @apply absolute right-80 top-5;
+    }
+    p {
+      @apply w-2/5 text-center mx-auto text-gray text-[16px];
+    }
+    button {
+      @apply px-3 py-2 text-[14px] font-semibold text-text rounded-md;
+    }
+    .container-tabs {
+      @apply flex justify-center mt-8;
+    }
+    button.active-tab {
+      @apply bg-gray;
+    }
+    .card {
+      @apply grid grid-cols-3 gap-x-8 gap-y-12;
+    }
+  }
+}
+@layer base {
+  body {
+    @apply bg-background mb-96;
+  }
+}
